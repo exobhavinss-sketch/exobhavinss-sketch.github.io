@@ -1,111 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Bhavin | AI Portfolio</title>
-<meta name="description" content="Bhavin's AI Portfolio showcasing projects, skills, and innovations.">
-
-<link rel="stylesheet" href="style.css">
-
-<!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>Bhavin AI Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
-<nav>
-    <h1>Bhavin AI</h1>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<header class="navbar">
+  <h1>Bhavin AI</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <!-- HERO -->
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>AI Developer 🚀</h1>
-        <p>Building futuristic AI solutions, smart systems, and beautiful web experiences.</p>
-        <button onclick="scrollToSection('projects')">Explore Work</button>
-    </div>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h2>🚀 Building AI-Powered Experiences</h2>
+    <p>Turning ideas into intelligent, beautiful solutions.</p>
+    <button onclick="scrollToSection('contact')">Hire Me</button>
+  </div>
+  <img src="assets/images/hero.webp" class="hero-img">
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="glass-card">
+  <img src="assets/images/profile.jpg" class="profile-img">
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I'm Bhavin, passionate about AI, web development, and building impactful tech solutions.
+      I focus on creating intelligent systems with stunning UI/UX.
+    </p>
+  </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2>🚀 My Projects</h2>
+  <h2>✨ Projects</h2>
+  <div class="project-grid">
 
-    <div class="projects">
-
-        <div class="card fade-in">
-            <img src="assets/images/project1.jpg" alt="AI Chatbot Project">
-            <h3>AI Chatbot</h3>
-            <p>Conversational AI system with smart responses.</p>
-        </div>
-
-        <div class="card fade-in">
-            <img src="assets/images/project2.jpg" alt="IoT Water Monitor">
-            <h3>IoT Water Monitor</h3>
-            <p>Solar-based smart monitoring system.</p>
-        </div>
-
-        <div class="card fade-in">
-            <img src="assets/images/project3.jpg" alt="Stock Predictor">
-            <h3>Stock Predictor</h3>
-            <p>Machine learning model for stock trends.</p>
-        </div>
-
+    <div class="project-card">
+      <img src="assets/images/project1.png">
+      <h3>AI Chatbot</h3>
     </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about" class="about">
-    <img src="assets/images/profile.jpg" alt="Bhavin Profile Image">
-
-    <div>
-        <h2>About Me</h2>
-        <p>
-            I'm Bhavin, passionate about AI, web development, and building impactful tech solutions.
-            I focus on creating intelligent systems and visually stunning user experiences.
-        </p>
+    <div class="project-card">
+      <img src="assets/images/project2.jpg">
+      <h3>Portfolio Website</h3>
     </div>
+
+    <div class="project-card">
+      <img src="assets/images/project3.jpg">
+      <h3>Smart Dashboard</h3>
+    </div>
+
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>📬 Contact Me</h2>
-
-    <div class="card">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea rows="4" placeholder="Message"></textarea>
-        <button>Send Message</button>
-    </div>
-
-    <!-- SOCIAL LINKS -->
-    <div class="socials">
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/bhavin-shankur-8421a0371/" 
-           target="_blank" 
-           rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i>
-        </a>
-
-    </div>
+<section id="contact">
+  <h2>📩 Contact Me</h2>
+  <form class="glass-card">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Send Message</button>
+  </form>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 Bhavin AI Portfolio</p>
+  © 2026 Bhavin AI Portfolio
 </footer>
 
-<!-- SCRIPT -->
 <script src="script.js"></script>
-
 </body>
 </html>
